@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
+
+html {
+ /* font-family: 'Forum', sans-serif;
+ font-family: 'Inter', sans-serif; */
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background-color: #ffffff;
+}
+
+h2 {
+text-align: center;
+font-family: 'Forum', sans-serif;
+color: #0C0C0E;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem;
+letter-spacing: 0.125rem;
+margin-top: 1.25rem;
+padding-bottom: 1.25rem;
+}
+
+h3 {
+margin-top: 1.25rem;
+color: #000;
+font-family: 'Inter', sans-serif;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.5rem;
+letter-spacing: 0.125rem;
+text-transform: uppercase;
+}
+
+h4 {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+}
+
+h5 {
+color: #000;
+font-family: 'Forum', sans-serif;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem;
+letter-spacing: 0.125rem;
+}
+
+
+
+.line {
+  background-color: #0C0C0E;
+  width: 3.125rem;
+  height: 0.0625rem;
+  margin-bottom: 2.5rem;
+}
+
+.line2 {
+  background-color: #BB945F;
+  width: 3.75rem;
+  height: 0.0625rem;
+}
+
+.line3 {
+  background-color: #BB945F;
+  width: 6.25rem;
+  height: 0.0625rem;
+}
+
+
+.container {
+ width: 100%;
+ max-width: 1440px;
+ margin: 0 auto;
+}
+
+/*Header*/
+.header_wrapper {
+ background-color: #0C0C0E;
+ display: flex;
+ color: #ffffff;
+ height: 90px;
+ padding: 0 20px;
+}
+
+.nav_link {
+ font-family: 'Inter', sans-serif;
+ text-decoration: none;
+ color: #ffffff;
+ font-size: 1.25rem;
+}
+
+.nav_item {
+ list-style: none;
+ margin-left: 30px;
+}
+
+.nav_list {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 100%;
+}
+
+.nav_title {
+ font-family: 'Forum', sans-serif;
+ display: flex;
+ align-items: center;
+ font-size: 1.85em;
+ font-weight: 400;
+ margin-right: 30.5%;
+ line-height: 50px;
+ letter-spacing: 0.0375rem;
+}
+
+.icon_account {
+  display: flex;
+  align-self: center;
+  margin-left: 3%;
+}
+
+/*Welcome*/
+.welcome {
+  background-image: url("../library/assets/images/welcome.png");
+  height: 37.5em;
+}
+
+.welcom_title {
+  font-family: 'Forum', sans-serif;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  width: 37.5rem;
+  height: 13.75rem;
+  background-color: #0C0C0E;
+  text-transform: uppercase;
+  line-height: 3.125rem;
+  padding-top: 13.75rem;
+  letter-spacing: 0.1875rem;
+  color: #FFF;
+}
+
+/*About*/
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 52.3125rem;
+  padding: 0 1.25rem;
+}
+
+.about_info {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.about_carousel {
+ 
+}
+
+.carousel_items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  width: 87.5rem;
+  height: 35rem;
+}
+
+.carousel_item:nth-child(4n), .carousel_item:nth-child(5n){
+  display: none;
+}
+
+
+/**/
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 2.1875rem 0;
+  list-style: none;
+  
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pag {
+  width: 1rem;
+  height: 1rem;
+  background-color: #0C0C0E;
+  border-radius: 50%;
+}
+
+/**/
+
+/*Favorites*/
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90rem;
+  padding: 0 1.25rem;
+}
+
+.favorites_choose_suptitle {
+  font-weight: 700;
+  justify-content: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.favorites_radio {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  align-self: flex-start;
+}
+
+.favorites_choose label {
+  margin-left: 1.25rem;
+  cursor: pointer;
+}
+
+.favorites_choose input {
+  margin-left: 5.625rem;
+}
+
+.favorites_choose input:first-child {
+  margin-left: 0;
+}
+
+.custom-radio input::before {
+  border-color: #000;
+  background-color: #000;
+}
+
+/*Favorites items*/
+.favorites_items {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 23.6%;
+  row-gap: 3.7%;
+}
+
+.wrapper_favorites_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites_item {
+display: flex;
+  padding-top: 0.94rem;
+  padding-left: 1.25rem;
+ width: 34.375rem;
+ height: 34.6875rem;
+ border: 1px solid #000;
+ background: #FFF;
+}
+
+.favorites_item p {
+margin-top: 1.25rem;
+font-family: 'Inter', sans-serif;
+width: 22.1875rem;
+color: #000;
+font-family: Inter;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem;
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+}
+
+.favorites_item img {
+  margin-left: 1rem;
+  width: 12.5rem;
+  height: 18.75rem;
+  align-self: flex-end;
+}
+
+.favorites_item form {
+  display: contents;
+}
+
+.favorites_item_button {
+  margin-top: 0.94rem;
+  width: 4.6875rem;
+height: 1.875rem;
+color: #0C0C0E;
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-size: 0.625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.0625rem;
+}
+
+/*CoffeShop*/
+.coffeShop {
+display: flex;
+width: 90rem;
+padding: 0 1.25rem 2.5rem 1.25rem;
+flex-direction: column;
+align-items: center;
+/* gap: 2.5rem; */
+}
+
+.coffeShop_info {
+color: #000;
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem; /* 200% */
+letter-spacing: 0.125rem;
+margin-bottom: 2.5rem;
+}
+
+.coffeShop_menu {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.menu_left, .menu_right {
+display: flex;
+flex-direction: column;
+width: 27.375rem;
+color: #BB945F;
+font-family: 'Forum', sans-serif;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem; /* 100% */
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+row-gap: 2.5rem;
+}
+
+.menu_right {
+  text-align: end;
+  width: 30.125rem;
+}
+
+.menu_item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: #000;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem; /* 200% */
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+list-style: none;
+}
+
+.menu_coast {
+  color: #000;
+font-family: Forum;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem; /* 200% */
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+}
+
+.menu_title_l {
+  width: 12.42rem;
+}
+
+.menu_title_r {
+  width: 14.6rem;
+}
+
+/*Contacts*/
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.25rem;
+  height: 35.9735rem;
+}
+
+.location {
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.map {
+width: 43.5rem;
+height: 25.875rem;
+}
+
+.title_phone, .address_mail a {
+color: #000;
+font-family: 'Inter', sans-serif;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.5rem; /* 200% */
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+margin-bottom: 1.25rem;
+}
+
+.phone, .address_mail {
+color: #000;
+font-family: 'Inter',sans-serif;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.5rem; /* 200% */
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+}
+
+.address {
+display: flex;
+flex-direction: column;
+row-gap: 1.25rem;
+}
+
+.address p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title_mail {
+color: #000;
+font-family: 'Inter', sans-serif;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.5rem; /* 200% */
+letter-spacing: 0.125rem;
+text-transform: capitalize;
+margin-top: 1.25rem;
+}
+
+/*LibraryCard*/
+.libraryCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*libraryCard*/
+.form_card input {
+  display: block;
+}
+
+.form_card_btn {
+  border-radius: 0.125rem;
+border: 1px solid #0C0C0E;
+}
+
+.form_card {
+  border: 3px solid #BB945F;
+background: #FFF;
+width: 37.5rem;
+height: 24.125rem;
+flex-shrink: 0;
+}
+
+.form_card form {
+  background: #BB945F;
+  width: 35rem;
+height: 17rem;
+flex-shrink: 0;
+text-align: center;
+align-items: center;
+}
