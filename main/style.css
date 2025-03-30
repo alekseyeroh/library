@@ -135,7 +135,7 @@ letter-spacing: 0.125rem;
 
 /*Welcome*/
 .welcome {
-  background-image: url("../library/assets/images/welcome.png");
+  background-image: url("../assets/images/welcome.png");
   height: 37.5em;
 }
 
