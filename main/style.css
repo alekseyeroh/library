@@ -8,22 +8,31 @@ html {
 * {
  margin: 0;
  padding: 0;
- box-sizing: border-box;
 }
 
 body {
- background-color: #ffffff;
+ background-color: #8f8f8f;
 }
+
+h1 {
+  font-family: 'Forum', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+ }
 
 h2 {
 text-align: center;
 font-family: 'Forum', sans-serif;
 color: #0C0C0E;
-font-size: 2.5rem;
+font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 2.5rem;
-letter-spacing: 0.125rem;
+line-height: 40px;
+letter-spacing: 2px;
 margin-top: 1.25rem;
 padding-bottom: 1.25rem;
 }
@@ -62,6 +71,56 @@ letter-spacing: 0.125rem;
 
 
 
+ 
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+ }
+
+/*Header*/
+.header {
+ background-color: #0C0C0E;
+ display: flex;
+ color: #ffffff;
+ height: 90px;
+ padding: 0 20px;
+}
+
+.nav {
+ align-content: center;
+ margin-left: 456px;
+}
+
+.nav_list {
+display: flex;
+}
+.nav_item {
+  list-style: none;
+  margin-right: 30px;
+ }
+
+.nav_link {
+ font-family: 'Inter', sans-serif;
+ text-decoration: none;
+ color: #ffffff;
+ font-size: 20px;
+ line-height: 50px;
+}
+
+.nav_link:hover {
+  color: #818181;
+  transition: 0.2s;
+ }
+
+.icon_account {
+  display: flex;
+  align-self: center;
+  margin-left: 12px;
+}
+
+/*Welcome*/
 .line {
   background-color: #0C0C0E;
   width: 3.125rem;
@@ -81,62 +140,10 @@ letter-spacing: 0.125rem;
   height: 0.0625rem;
 }
 
-
-.container {
- width: 100%;
- max-width: 1440px;
- margin: 0 auto;
-}
-
-/*Header*/
-.header_wrapper {
- background-color: #0C0C0E;
- display: flex;
- color: #ffffff;
- height: 90px;
- padding: 0 20px;
-}
-
-.nav_link {
- font-family: 'Inter', sans-serif;
- text-decoration: none;
- color: #ffffff;
- font-size: 1.25rem;
-}
-
-.nav_item {
- list-style: none;
- margin-left: 30px;
-}
-
-.nav_list {
- display: flex;
- justify-content: space-between;
- align-items: center;
- height: 100%;
-}
-
-.nav_title {
- font-family: 'Forum', sans-serif;
- display: flex;
- align-items: center;
- font-size: 1.85em;
- font-weight: 400;
- margin-right: 30.5%;
- line-height: 50px;
- letter-spacing: 0.0375rem;
-}
-
-.icon_account {
-  display: flex;
-  align-self: center;
-  margin-left: 3%;
-}
-
-/*Welcome*/
 .welcome {
   background-image: url("../assets/images/welcome.png");
-  height: 37.5em;
+  padding-top: 13.75rem;
+  padding-bottom: 160px;
 }
 
 .welcom_title {
@@ -147,14 +154,14 @@ letter-spacing: 0.125rem;
   text-align: center;
   align-items: center;
   color: #ffffff;
-  font-size: 2.5rem;
-  width: 37.5rem;
-  height: 13.75rem;
+  font-size: 40px;
+  width: 600px;
+  height: 220px;
   background-color: #0C0C0E;
   text-transform: uppercase;
-  line-height: 3.125rem;
-  padding-top: 13.75rem;
-  letter-spacing: 0.1875rem;
+  line-height: 50px;
+  
+  letter-spacing: 3px;
   color: #FFF;
 }
 
