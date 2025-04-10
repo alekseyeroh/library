@@ -69,10 +69,6 @@ line-height: 2.5rem;
 letter-spacing: 0.125rem;
 }
 
-
-
- 
-
 .container {
   width: 100%;
   max-width: 1440px;
@@ -184,7 +180,6 @@ display: flex;
 }
 
 .about_carousel {
- 
 }
 
 .carousel_items {
@@ -200,33 +195,35 @@ display: flex;
 }
 
 
+
 /**/
 .dots {
   display: flex;
-  justify-content: center;
-  margin: 2.1875rem 0;
+  justify-content: space-between;
+  margin: 41px auto;
   list-style: none;
-  
+  width: 68px;
 }
 
 .dot {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 1.625rem;
-  height: 1.625rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
-.pag {
-  width: 1rem;
-  height: 1rem;
+  /* width: 1.625rem;
+  height: 1.625rem; */
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
   background-color: #0C0C0E;
   border-radius: 50%;
 }
 
-/**/
+
+
+.dot.active  {
+  background-color: #BB945F;
+}
+
 
 /*Favorites*/
 
@@ -241,7 +238,7 @@ display: flex;
 .favorites_choose_suptitle {
   font-weight: 700;
   justify-content: flex-start;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .favorites_radio {
@@ -266,6 +263,26 @@ display: flex;
 .custom-radio input::before {
   border-color: #000;
   background-color: #000;
+}
+
+.favorites_radio input {
+  appearance: none;
+  position: relative;
+  accent-color: black;
+  background-color: none;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border-radius: 17px;
+  border: 2px solid #000000;
+  padding: 3px;
+  
+}
+
+.favorites_radio input:checked{
+  appearance: auto;
+  background-color: black;
+
 }
 
 /*Favorites items*/
