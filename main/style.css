@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
 
-html {
-  /* font-family: 'Forum', sans-serif;
- font-family: 'Inter', sans-serif; */
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -182,7 +177,10 @@ h5 {
   letter-spacing: 0px;
 }
 
-.about_carousel {}
+.about_carousel {
+  display: block;
+  overflow: hidden;
+}
 
 .carousel_items {
   display: flex;
@@ -190,12 +188,18 @@ h5 {
   margin-top: 1.25rem;
   width: 87.5rem;
   height: 35rem;
+  transition: transform 0.5s ease-in-out;
 }
 
-.carousel_item:nth-child(4n),
+.carousel_item {
+  margin-right: 25px;
+
+}
+
+/* .carousel_item:nth-child(4n),
 .carousel_item:nth-child(5n) {
   display: none;
-}
+} */
 
 
 
@@ -218,12 +222,9 @@ h5 {
   border-radius: 50%;
 }
 
-
-
 .dot.active {
   background-color: #BB945F;
 }
-
 
 /*Favorites*/
 
@@ -296,8 +297,6 @@ h5 {
  margin-left: 0px; */
   border-radius: 50%;
   background: #000;
-  top: ;
-
 }
 
 .favorites_radio input:checked+label {
@@ -305,31 +304,15 @@ h5 {
 }
 
 /*Favorites items*/
-.favorites_items {
-  margin-top: 39px;
+.favorites_items.open {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 220px;
   grid-row-gap: 40px;
+  margin-top: 39px;
 }
 
-.wrap_fav_items {
-
-}
-
-#winter {
-  
-}
-
-#spring {
-  display: none;
-}
-
-#summer {
-  display: none;
-}
-
-#autumn {
+.favorites_items {
   display: none;
 }
 
@@ -338,7 +321,6 @@ h5 {
   grid-template-columns: 1fr 1fr;
   width: 590px;
   height: 555px;
-
 }
 
 .wrapper_favorites_item {
