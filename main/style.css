@@ -180,17 +180,21 @@ h5 {
   letter-spacing: 0px;
 }
 
-.carusel_container {
-  margin-top: 1.25rem;
+.about_carousel {
   width: 1400px;
+  margin: 0 auto;
+}
+
+.carousel_container {
+  margin-top: 1.25rem;
   height: 560px;
   overflow: hidden;
 }
 
 .carousel_items {
   display: flex;
-  justify-content: space-between;
-  transition: transform .2s ease-in-out;
+  /* justify-content: space-between; */
+  transition: .2s ease-in-out;
 }
 
 .carousel_item {
