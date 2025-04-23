@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
 
-* {
+*,
+::before,
+::after {
+  box-sizing: border-box ;
   margin: 0;
   padding: 0;
 }
@@ -177,31 +180,23 @@ h5 {
   letter-spacing: 0px;
 }
 
-.about_carousel {
-  display: block;
+.carusel_container {
+  margin-top: 1.25rem;
+  width: 1400px;
+  height: 560px;
   overflow: hidden;
 }
 
 .carousel_items {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.25rem;
-  width: 87.5rem;
-  height: 35rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .carousel_item {
-  margin-right: 25px;
+  /* margin-right: 25px; */
 
 }
-
-/* .carousel_item:nth-child(4n),
-.carousel_item:nth-child(5n) {
-  display: none;
-} */
-
-
 
 /**/
 .dots {
