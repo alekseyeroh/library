@@ -68,7 +68,7 @@ const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
 
 items.forEach((item) =>{
-  item.style.itemWidth =`$(itemWidth)px`;
+  item.style.minWidth =`${itemWidth}px`;
 })
 
 btnNext.addEventListener ('click', () => {
@@ -86,7 +86,7 @@ btnPrev.addEventListener ('click', () => {
 });
 
 const setPosition = () => {
-  track.style.transform = `translateX($(position)px)`;
+  track.style.transform = `translateX(${position}px)`;
 }
 
 const checkBtns = () => {
