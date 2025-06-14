@@ -224,7 +224,7 @@ h5 {
   padding-bottom: 160px;
 }
 
-.welcom_title {
+.welcome_title {
   font-family: 'Forum', sans-serif;
   box-sizing: content-box;
   display: flex;
@@ -240,6 +240,7 @@ h5 {
   line-height: 50px;
   letter-spacing: 3px;
   color: #FFF;
+  margin: 0;
 }
 
 /*About*/
@@ -490,10 +491,26 @@ h5 {
   margin-bottom: 2.5rem;
 }
 
-.coffeShop_menu {
+.coffeeShop_menu {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.menu_title {
+  color: #BB945F;
+  font-family: 'Forum', sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.right {
+  text-align: end;
 }
 
 .menu_left,
@@ -501,15 +518,6 @@ h5 {
   display: flex;
   flex-direction: column;
   width: 27.375rem;
-  color: #BB945F;
-  font-family: 'Forum', sans-serif;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.5rem;
-  /* 100% */
-  letter-spacing: 0.125rem;
-  text-transform: capitalize;
   row-gap: 2.5rem;
 }
 
@@ -799,6 +807,19 @@ footer {
 
 .social_icons a img {
   display: block;
+}
+
+.twitter {
+  width: 24px
+}
+
+.instagram {
+  width: 20px
+}
+
+.facebook {
+  width:10.39px;
+  height:20px
 }
 
 .social_icons a img:hover {
