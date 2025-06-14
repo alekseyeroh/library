@@ -1,9 +1,19 @@
+// const anchor = document.querySelectorAll('a[href*="#"]');
+//
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     const blockID = anchor.getAttribute
+//   })
+// }
+
+
 //Slider
 const dots = document.querySelector('.dots');
 const dot = document.querySelectorAll('.dot')
 dots.addEventListener('click', function (e) {
   if (!e.target.classList.contains('dot'))         // если клик не по ссылке, просто завершим выполнение 
-    return; 
+    return;
   e.preventDefault();                                // отменим стандартную реакцию ссылки на клик
   for (let link of this.querySelectorAll('.dot'))  // удалим класс active у всех наших ссылок... 
     link.classList.remove('active');
@@ -68,17 +78,17 @@ const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
 
 items.forEach((item) => {
-  item.style.minWidth =`${itemWidth}px`;
+  item.style.minWidth = `${itemWidth}px`;
 })
 
-btnNext.addEventListener ('click', () => {
+btnNext.addEventListener('click', () => {
   const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
   position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
   setPosition();
   checkBtns();
 });
 
-btnPrev.addEventListener ('click', () => {
+btnPrev.addEventListener('click', () => {
   const itemsLeft = Math.abs(position) / itemWidth;
   position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
   setPosition();
